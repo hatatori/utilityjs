@@ -20,11 +20,11 @@ function rep(div, dados){
   div.innerHTML = k
 }
 
-function renderForeach(){
+function renderforeach(){
   for(i of document.querySelectorAll("[foreach]")){
     f_name = eval(i.getAttribute('foreach'))
     rep(i, f_name)
   }
 }
 
-renderForeach()
+renderforeach()

@@ -8,6 +8,7 @@ dados = [
     celular: '8598784818'
   },
   {
+    nome: "maria",
     id: 2,
     email: 'nok@ok.com',
     endereco: 'rua b - 4',
@@ -15,8 +16,8 @@ dados = [
     celular: '2035689'
   },
   {
+    nome:"rita",
     id: 3,
-    nome: "julia",
     email: 'maria@ok.com',
     endereco: 'rua c - 5',
     cep: '00800', 
@@ -33,6 +34,7 @@ function rep(a,data){
       est_clone.innerHTML = est_clone.innerHTML.replace(r,i[e])
       div.appendChild(est_clone)
     })
+    est_clone.innerHTML = est_clone.innerHTML.replace(/\$\w+/g,"")
   }
   a.children[0].remove()
 }
